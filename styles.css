@@ -53,25 +53,6 @@ html, body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Separate Container for Labels and Buttons */
-.content-container {
-    flex-grow: 1; /* Allows content to dynamically adjust to fill available space */
-    display: flex; /* Enables Flexbox for layout management */
-    flex-direction: column; /* Stacks elements vertically */
-    align-items: center; /* Horizontally centers all items */
-    justify-content: center; /* Vertically centers content */
-    background-color: #f8f8f8; /* Light background color */
-    color: #333; /* Text color */
-    gap: 30px; /* Adds consistent spacing between sections */
-    padding: 20px; /* Provides inner spacing for content neatness */
-    width: 100%; /* Ensures full width of the viewport */
-    height: 100%; /* Covers the full height of the parent container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for visual depth */
-    border-radius: 10px; /* Optional rounded corners for aesthetic appeal */
-}
-
-
-
 /* Labels Styling */
 .label {
     font-size: 14px; /* Reduced label font size */
