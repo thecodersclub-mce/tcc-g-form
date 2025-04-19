@@ -1,88 +1,58 @@
-/* Global Styles */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #0056b3; /* Blue background */
-    color: #ffffff; /* White text color for contrast */
-    box-sizing: border-box; /* Ensures consistent box sizing */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - The Coders Club</title>
+    <!-- Link Favicon -->
+    <link rel="icon" href="MCE_tab.png" type="image/png">
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Invisible Container -->
+    <div class="invisible-container">
+        <!-- Blue Container (Header) -->
+        <div class="blue-container">
+            <img src="MCE_tab.png" alt="Logo" class="favicon-logo">
+            <div class="titles">
+                <h1 class="college-name">Mangayarkarasi College of Engineering</h1>
+                <h2 class="site-title">The Coders Club</h2>
+            </div>
+        </div>
 
-/* Invisible Container */
-.invisible-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    padding: 20px;
-}
+        <!-- Sections -->
+        <!-- 3RD YEAR CSE DEPT -->
+        <section>
+            <h2 class="label">3RD YEAR CSE DEPT</h2>
+            <div class="button-group">
+                <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfMCid00bXDRDniBH-l-aZb9QVU-rbwVUNUMfWwO-NxvDulTw/viewform?usp=sharing';">3RD CSE B</button>
+                <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSev95Cov042evwqd7rzLC98w2NqlwwnUdTDyXhgjus9SPrEVA/viewform?usp=sharing';">3RD CSE G</button>
+            </div>
+        </section>
 
-/* Header Styling */
-.blue-container {
-    width: 100%;
-    background-color: #00408f;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        <!-- 2ND YEAR CSE DEPT -->
+        <section>
+            <h2 class="label">2ND YEAR CSE DEPT</h2>
+            <div class="button-group">
+                <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScbqNPC--HsUXBVslZEhbAm7g8RRFzr8DrS_L4UXlzO2loegQ/viewform?usp=sharing';">2ND CSE B</button>
+                <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdxYQRG-l-oupvQOdQu0mH9FV-3NdFozc-L2G_maLuA3As85g/viewform?usp=sharing';">2ND CSE G</button>
+            </div>
+        </section>
 
-.favicon-logo {
-    width: 60px;
-    height: auto;
-    margin-right: 15px;
-}
+        <!-- 2ND YEAR AI/ML DEPT -->
+        <section>
+            <h2 class="label">2ND YEAR AI/ML DEPT</h2>
+            <div class="button-group">
+                <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSc9cRks4vwu_4mXXJ6nWmZFNDmeVagFb6lHSr6zzAvnRQlgQw/viewform?usp=sharing';">2ND AI/ML B</button>
+                <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScBEas57Wu4P4eex9OyZxTGdaWisdamDMSFOtaVa1b1X_lw6Q/viewform?usp=sharing';">2ND AI/ML G</button>
+            </div>
+        </section>
 
-.titles h1, .titles h2 {
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-/* Labels and Sections */
-.label {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 0 10px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-/* Buttons Styling */
-button {
-    background-color: #2196F3;
-    color: #ffffff;
-    border: none;
-    padding: 12px 25px;
-    margin: 10px 0;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 80%; /* Adjust width for better alignment */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-    background-color: #1E88E5;
-}
-
-button:active {
-    transform: scale(0.98);
-}
-
-/* Footer */
-footer {
-    width: 100%;
-    background-color: #00408f;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
+        <!-- Footer -->
+        <footer>
+            <p>Created by The Coders Club</p>
+        </footer>
+    </div>
+</body>
+</html>
