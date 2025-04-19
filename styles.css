@@ -1,109 +1,90 @@
-/* Global Styles */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: #f8f8f8;
-    overflow: hidden; /* Prevent scrolling beyond page content */
+    overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #f4f4f4; /* Light body background */
+    background-color: #f4f4f4; 
     color: #333;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
-
-/* Blue Container (Header) */
 .blue-container {
     width: 100%;
-    background-color: #00408f; /* Matches footer background */
+    background-color: #00408f; 
     padding: 10px;
     display: flex;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
 }
-
-/* Left Alignment for Logo and Titles */
 .left-aligned {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between logo and text */
+    gap: 10px; 
     padding: 10px;
 }
-
 .favicon-logo {
-    width: 50px; /* Reduced size for professionalism */
+    width: 50px; 
     height: auto;
 }
-
 .titles {
     display: flex;
     flex-direction: column;
 }
 
 .college-name {
-    font-size: 16px; /* Reduced size */
+    font-size: 16px; 
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
-
 .site-title {
-    font-size: 14px; /* Reduced size */
+    font-size: 14px; 
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-
-/* Labels Styling */
 .label {
-    font-size: 14px; /* Reduced label font size */
+    font-size: 14px; 
     font-weight: bold;
     margin-right: 15px;
-    width: 150px; /* Adjust label width */
+    width: 150px; 
     text-align: left;
 }
-
-/* Section Styling */
 section {
-    width: 100%; /* Ensures full width */
-    padding: 15px; /* Adds spacing inside sections */
-    text-align: center; /* Centers content inside sections */
+    width: 100%; 
+    padding: 15px; 
+    text-align: center; 
 }
-
-/* Buttons Row Styling */
 .button-row {
     display: flex;
-    justify-content: center; /* Centers buttons horizontally */
-    gap: 10px; /* Space between buttons */
+    justify-content: center; 
+    gap: 10px; 
 }
-
 button {
-    background-color: #2196F3; /* Primary button color */
-    color: white; /* Button text color */
-    border: none; /* Removes borders */
-    padding: 8px 12px; /* Reduced button size */
-    border-radius: 5px; /* Smooth rounded corners */
-    font-size: 12px; /* Keeps text readable */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth */
-    cursor: pointer; /* Displays pointer on hover */
+    background-color: #2196F3; 
+    color: white; 
+    border: none; 
+    padding: 8px 12px; 
+    border-radius: 5px; 
+    font-size: 12px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
 }
-
 button:hover {
-    background-color: #1E88E5; /* Changes color on hover */
+    background-color: #1E88E5; 
 }
-
 button:active {
-    transform: scale(0.98); /* Reduces size slightly on click */
+    transform: scale(0.98); 
 }
-/* Footer Styling */
 footer {
-    width: 100%; /* Ensures the footer spans the full width of the viewport */
-    background-color: #00408f; /* Deep blue footer background */
-    color: white; /* White text for contrast */
-    text-align: center; /* Centers the content inside the footer */
-    padding: 15px; /* Adds vertical and horizontal space for text */
-    position: fixed; /* Keeps the footer permanently fixed at the bottom */
-    bottom: 0; /* Positions the footer at the very bottom of the viewport */
-    left: 0; /* Aligns the footer to the left edge of the viewport */
+    width: 100%; 
+    background-color: #00408f; 
+    color: white;
+    text-align: center
+    padding: 15px; 
+    position: fixed; /
+    bottom: 0; 
+    left: 0; 
 }
-
