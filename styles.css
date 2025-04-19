@@ -63,21 +63,6 @@ html, body {
     text-align: left;
 }
 
-/* Separate Container for Labels and Buttons */
-.content-container {
-    flex-grow: 1; /* Allows content to stretch dynamically */
-    display: flex; /* Enables Flexbox for layout management */
-    flex-direction: column; /* Stacks sections vertically */
-    align-items: center; /* Centers horizontally */
-    justify-content: center; /* Centers vertically */
-    gap: 30px; /* Adds consistent spacing between sections */
-    width: 100%; /* Ensures full width of the viewport */
-    padding: 20px; /* Provides inner spacing */
-    background-color: #f8f8f8; /* Light background for neatness */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle effect */
-    border-radius: 10px; /* Optional rounded corners for aesthetics */
-}
-
 /* Section Styling */
 section {
     width: 100%; /* Ensures full width of the parent container */
