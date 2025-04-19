@@ -55,21 +55,21 @@ html, body {
 
 /* Separate Container for Labels and Buttons */
 .content-container {
-    height: calc(100vh - 80px); /* Ensure container takes up all viewport height minus header/footer */
-    border: 2px solid red; /* Helps visualize the exact positioning of the container */
-    flex-grow: 1; /* Allows content to stretch dynamically */
-    display: flex;
-    background-color: #f8f8f8; /* Light body background */
+    flex-grow: 1; /* Allows content to dynamically adjust to fill available space */
+    display: flex; /* Enables Flexbox for layout management */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Horizontally centers all items */
+    justify-content: center; /* Vertically centers content */
+    background-color: #f8f8f8; /* Light background color */
     color: #333; /* Text color */
-    flex-direction: column;
-    align-items: center; /* Centers horizontally */
-    justify-content: center; /* Centers vertically */
-    gap: 30px; /* Adds space between sections */
-    padding: 20px; /* Proper padding for neatness */
-    width: 100%; /* Ensures it spans the full width of the viewport */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for neatness */
-    border-radius: 10px; /* Optional rounded corners for aesthetics */
+    gap: 30px; /* Adds consistent spacing between sections */
+    padding: 20px; /* Provides inner spacing for content neatness */
+    width: 100%; /* Ensures full width of the viewport */
+    height: 100%; /* Covers the full height of the parent container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for visual depth */
+    border-radius: 10px; /* Optional rounded corners for aesthetic appeal */
 }
+
 
 
 /* Labels Styling */
