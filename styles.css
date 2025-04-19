@@ -3,49 +3,63 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden; /* Prevent scrolling beyond page content */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light body background */
     color: #333;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Blue Container (Header) */
 .blue-container {
     width: 100%;
     background-color: #00408f; /* Matches footer background */
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
+/* Left Alignment for Logo and Titles */
 .left-aligned {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between logo and text */
+    gap: 10px;
+    padding: 10px;
 }
 
 .favicon-logo {
-    width: 80px;
+    width: 50px;
     height: auto;
 }
 
 .titles {
     display: flex;
     flex-direction: column;
-    padding-left: 15px; /* Adjust padding for alignment */
 }
 
-.college-name, .site-title {
+.college-name {
+    font-size: 16px;
     margin: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.site-title {
+    font-size: 14px;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Invisible Container */
 .invisible-container {
+    flex-grow: 1; /* Allows content to stretch dynamically */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    min-height: calc(100vh - 120px); /* Adjust height for header and footer */
+    padding: 10px;
 }
 
 /* Content Styling */
@@ -58,17 +72,17 @@ html, body {
 
 /* Labels Styling */
 .label {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin-right: 15px;
-    width: 150px; /* Adjust label width */
+    width: 150px;
     text-align: left;
 }
 
 /* Buttons Row Styling */
 .button-row {
     display: flex;
-    gap: 10px; /* Space between buttons */
+    gap: 10px;
     align-items: center;
 }
 
@@ -76,9 +90,9 @@ button {
     background-color: #2196F3;
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 8px 12px;
     border-radius: 5px;
-    font-size: 14px; /* Reduced button size */
+    font-size: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -92,12 +106,9 @@ button:active {
 
 /* Footer Styling */
 footer {
-    width: 100%; /* Full width */
+    width: 100%; /* Full-width footer */
     background-color: #00408f;
     color: white;
     text-align: center;
     padding: 15px;
-    position: fixed; /* Fixed at bottom */
-    bottom: 0;
-    left: 0;
 }
