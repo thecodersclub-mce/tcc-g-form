@@ -55,6 +55,8 @@ html, body {
 
 /* Separate Container for Labels and Buttons */
 .content-container {
+    height: calc(100vh - 80px); /* Ensure container takes up all viewport height minus header/footer */
+    border: 2px solid red; /* Helps visualize the exact positioning of the container */
     flex-grow: 1; /* Allows content to stretch dynamically */
     display: flex;
     background-color: #f8f8f8; /* Light body background */
