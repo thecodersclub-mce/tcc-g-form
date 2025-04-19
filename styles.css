@@ -114,11 +114,15 @@ button:active {
     transform: scale(0.98);
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
-    width: 100%; /* Full-width footer */
-    background-color: #00408f;
-    color: white;
-    text-align: center;
-    padding: 15px;
+    width: 100%; /* Spans the full width */
+    background-color: #00408f; /* Footer background color */
+    color: white; /* Text color for footer */
+    text-align: center; /* Centers the text */
+    padding: 10px; /* Reduces height of the footer */
+    font-size: 14px; /* Footer font size */
+    border-top: 3px solid #0056b3; /* Top border for footer */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
+    position: fixed; /* Fixes the footer at the bottom */
 }
