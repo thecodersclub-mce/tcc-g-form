@@ -65,15 +65,6 @@ html, body {
 
 /* Section Styling */
 section {
-    width: 100%; /* Ensures full width of the parent container */
-    padding: 15px; /* Adds inner spacing */
-    background-color: #f8f8f8; /* Applies light background to each section */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
-    border-radius: 5px; /* Rounded corners for sections */
-    text-align: center; /* Centers content inside sections */
-}
-/* Sections Styling */
-section {
     width: 100%; /* Ensures full width */
     padding: 15px; /* Adds spacing inside sections */
     text-align: center; /* Centers content inside sections */
