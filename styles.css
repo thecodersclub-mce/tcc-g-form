@@ -101,12 +101,13 @@ button:active {
 
 /* Footer Styling */
 footer {
-    width: 100%; /* Full-width footer */
-    background-color: #00408f; /* Footer background color */
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: fixed; /* Footer fixed at the bottom */
-    bottom: 0;
-    left: 0;
+    width: 100%; /* Ensures the footer spans the full width of the viewport */
+    background-color: #00408f; /* Deep blue footer background */
+    color: white; /* White text for contrast */
+    text-align: center; /* Centers the content inside the footer */
+    padding: 15px; /* Adds vertical and horizontal space for text */
+    position: fixed; /* Keeps the footer permanently fixed at the bottom */
+    bottom: 0; /* Positions the footer at the very bottom of the viewport */
+    left: 0; /* Aligns the footer to the left edge of the viewport */
 }
+
