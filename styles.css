@@ -86,22 +86,27 @@ section {
     border-radius: 5px; /* Rounded corners for sections */
     text-align: center; /* Centers content inside sections */
 }
+/* Sections Styling */
+section {
+    width: 100%; /* Ensures full width */
+    padding: 15px; /* Adds spacing inside sections */
+    text-align: center; /* Centers content inside sections */
+}
 
 /* Buttons Row Styling */
 .button-row {
     display: flex;
     justify-content: center; /* Centers buttons horizontally */
-    gap: 10px; /* Adds space between buttons */
-    margin-top: 10px; /* Adds space above button rows */
+    gap: 10px; /* Space between buttons */
 }
 
 button {
     background-color: #2196F3; /* Primary button color */
     color: white; /* Button text color */
     border: none; /* Removes borders */
-    padding: 8px 12px; /* Reduces button size for neatness */
-    border-radius: 5px; /* Smooth, rounded corners */
-    font-size: 12px; /* Maintains readability with smaller size */
+    padding: 8px 12px; /* Reduced button size */
+    border-radius: 5px; /* Smooth rounded corners */
+    font-size: 12px; /* Keeps text readable */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth */
     cursor: pointer; /* Displays pointer on hover */
 }
@@ -113,8 +118,6 @@ button:hover {
 button:active {
     transform: scale(0.98); /* Reduces size slightly on click */
 }
-
-
 /* Footer Styling */
 footer {
     width: 100%; /* Ensures the footer spans the full width of the viewport */
