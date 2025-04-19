@@ -62,30 +62,58 @@ html, body {
     text-align: left;
 }
 
+/* Separate Container for Labels and Buttons */
+.content-container {
+    flex-grow: 1; /* Allows content to stretch dynamically */
+    display: flex; /* Enables Flexbox for layout management */
+    flex-direction: column; /* Stacks sections vertically */
+    align-items: center; /* Centers horizontally */
+    justify-content: center; /* Centers vertically */
+    gap: 30px; /* Adds consistent spacing between sections */
+    width: 100%; /* Ensures full width of the viewport */
+    padding: 20px; /* Provides inner spacing */
+    background-color: #f8f8f8; /* Light background for neatness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle effect */
+    border-radius: 10px; /* Optional rounded corners for aesthetics */
+}
+
+/* Section Styling */
+section {
+    width: 100%; /* Ensures full width of the parent container */
+    padding: 15px; /* Adds inner spacing */
+    background-color: #f8f8f8; /* Applies light background to each section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+    border-radius: 5px; /* Rounded corners for sections */
+    text-align: center; /* Centers content inside sections */
+}
+
 /* Buttons Row Styling */
 .button-row {
     display: flex;
-    gap: 10px; /* Space between buttons */
-    align-items: center;
+    justify-content: center; /* Centers buttons horizontally */
+    gap: 10px; /* Adds space between buttons */
+    margin-top: 10px; /* Adds space above button rows */
 }
 
 button {
-    background-color: #2196F3;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 12px; /* Maintain readability with smaller size */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #2196F3; /* Primary button color */
+    color: white; /* Button text color */
+    border: none; /* Removes borders */
+    padding: 8px 12px; /* Reduces button size for neatness */
+    border-radius: 5px; /* Smooth, rounded corners */
+    font-size: 12px; /* Maintains readability with smaller size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth */
+    cursor: pointer; /* Displays pointer on hover */
 }
 
 button:hover {
-    background-color: #1E88E5;
+    background-color: #1E88E5; /* Changes color on hover */
 }
 
 button:active {
-    transform: scale(0.98);
+    transform: scale(0.98); /* Reduces size slightly on click */
 }
+
 
 /* Footer Styling */
 footer {
