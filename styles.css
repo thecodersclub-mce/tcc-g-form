@@ -12,65 +12,58 @@ html, body {
 /* Invisible Container */
 .invisible-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh; /* Ensures full-height layout */
+    flex-direction: row;
     gap: 20px;
-    padding: 20px;
-    position: relative;
+    min-height: 100vh; /* Ensures the footer sticks to the bottom */
 }
 
-/* Blue Container (Header) */
-.blue-container {
-    width: 100%;
-    background-color: #0056b3; /* Blue background */
+/* Curved Container Styling */
+.curved-container {
+    width: 300px;
+    background-color: #0056b3;
+    border-radius: 20px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
 .favicon-logo {
-    width: 60px;
+    width: 80px;
     height: auto;
-    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
-.titles {
-    display: flex;
-    flex-direction: column;
-}
-
-.college-name, .site-title {
+.titles h1, .titles h2 {
     margin: 0;
+    text-align: center;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* Content Styling */
 .content {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px; /* Adds space below header */
-    flex-grow: 1; /* Pushes the footer to the bottom */
+    gap: 20px;
+    flex-grow: 1; /* Ensures the content expands to fill the remaining space */
 }
 
-/* Labels */
+/* Labels Styling */
 .label {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
+    margin-right: 15px;
+    width: 150px;
     text-align: left;
-    margin-right: 20px;
-    width: 200px; /* Fixed label width */
-    display: inline-block;
 }
 
-/* Buttons Row */
+/* Buttons Row Styling */
 .button-row {
     display: flex;
-    gap: 10px; /* Space between buttons */
+    gap: 10px;
     align-items: center;
 }
 
@@ -78,9 +71,9 @@ button {
     background-color: #2196F3;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 15px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -92,14 +85,14 @@ button:active {
     transform: scale(0.98);
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
-    width: 100%;
+    width: 100%; /* Spans the full width */
     background-color: #00408f;
     color: white;
     text-align: center;
     padding: 15px;
-    position: absolute;
-    bottom: 0;
+    position: fixed; /* Permanently fixes the footer at the bottom */
+    bottom: 0; /* Ensures it is at the bottom */
     left: 0;
 }
