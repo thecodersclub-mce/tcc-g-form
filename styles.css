@@ -1,26 +1,29 @@
 /* Global Styles */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; /* Prevent scrolling beyond page content */
+html, body{
+    top: 0;
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+    height: 100%; /* Ensures the body fills the viewport */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #f4f4f4; /* Light body background */
+    background-color: #f4f4f4;
     color: #333;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    box-sizing: border-box; /* Ensures consistent box sizing */
 }
-
 /* Blue Container (Header) */
 .blue-container {
-    width: 100%;
-    background-color: #00408f; /* Matches footer background */
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: white;
+    position: fixed;
+    margin: 0; /* Removes all margins around the container */
+    padding: 20px; /* Uniform padding inside the container */
+    position: relative; /*Ensures it's positioned correctly */
+    top: 0; /* Explicitly places it at the top */
+    width: 100%; /* Ensures full-width coverage */
+    background-color: #0056b3; /* Blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    display: flex; /* Horizontal alignment */
+    align-items: center; /* Centers content vertically */
+    gap: 10px; /* Space between logo and titles */
+    color: white; /* White text color */
+    z-index: 1000; /* Ensures the header stays above other elements */
 }
 
 /* Left Alignment for Logo and Titles */
@@ -31,28 +34,35 @@ html, body {
     padding: 10px;
 }
 
+/* Logo Styling */
 .favicon-logo {
-    width: 50px;
-    height: auto;
+    width: 60px; /* Sets logo width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Prevents distortion */
 }
 
+/* Titles Styling */
 .titles {
+    margin-left: 15px; /* Provides adequate spacing from the logo */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stacks the text vertically */
+    color: white;
 }
 
 .college-name {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     margin: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow for text */
 }
 
 .site-title {
-    font-size: 14px;
+    font-size: 20px;
     margin: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+    white-space: nowrap; /* Prevents line breaking */
+    font-weight: bold;
 }
-
 /* Invisible Container */
 .invisible-container {
     flex-grow: 1; /* Allows content to stretch dynamically */
