@@ -1,7 +1,8 @@
 /* Global Styles */
-html, body {
+html, /* Body Padding */
+body {
     margin: 0;
-    padding: 0;
+    padding: 10px; /* Add padding around the edges */
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     background-color: #0056b3; /* Blue background */
@@ -14,19 +15,22 @@ html, body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 20px; /* Space between sections */
+    gap: 20px; /* Adds spacing between sections */
+    background-color: transparent;
 }
 
-/* Header Styling */
+/* Blue Container (Header) */
 .blue-container {
     width: 100%;
     background-color: #00408f;
     padding: 20px;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Adds rounded corners */
 }
+
 
 .favicon-logo {
     width: 60px;
