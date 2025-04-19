@@ -1,29 +1,29 @@
 /* Global Styles */
-html, body{
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #f4f4f4; /* Light background */
+    background-color: #f4f4f4;
     color: #333;
-    box-sizing: border-box; /* Consistent box sizing */
+    box-sizing: border-box;
 }
 
 /* Invisible Container */
 .invisible-container {
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
-    background-color: transparent;
-    padding: 20px; /* Adds padding around the content */
+    align-items: center;
+    min-height: 100vh; /* Ensures full-height layout */
     gap: 20px;
+    padding: 20px;
+    position: relative;
 }
 
 /* Blue Container (Header) */
 .blue-container {
     width: 100%;
-    background-color: #0056b3; /* Blue header background */
+    background-color: #0056b3; /* Blue background */
     padding: 20px;
     display: flex;
     align-items: center;
@@ -40,28 +40,37 @@ html, body{
 .titles {
     display: flex;
     flex-direction: column;
-    color: white;
 }
 
 .college-name, .site-title {
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adds subtle shadow */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-/* Section Labels */
+/* Content Styling */
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Adds space below header */
+    flex-grow: 1; /* Pushes the footer to the bottom */
+}
+
+/* Labels */
 .label {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    width: 200px; /* Fixed width */
-    display: inline-block; /* Ensures label is aligned */
-    text-align: left; /* Aligns text to the left */
-    margin-right: 20px; /* Creates space for the buttons */
+    text-align: left;
+    margin-right: 20px;
+    width: 200px; /* Fixed label width */
+    display: inline-block;
 }
 
 /* Buttons Row */
 .button-row {
     display: flex;
-    gap: 10px; /* Adds spacing between buttons */
+    gap: 10px; /* Space between buttons */
     align-items: center;
 }
 
@@ -72,8 +81,7 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
@@ -88,8 +96,10 @@ button:active {
 footer {
     width: 100%;
     background-color: #00408f;
-    text-align: center;
-    padding: 10px;
     color: white;
-    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
