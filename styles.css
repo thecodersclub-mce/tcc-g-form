@@ -4,28 +4,19 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #f4f4f4; /* Light background for body */
+    background-color: #f4f4f4; /* Light body background */
     color: #333;
     box-sizing: border-box;
 }
 
-/* Invisible Container */
-.invisible-container {
-    display: flex;
-    flex-direction: row; /* Display curved container on the left */
-    gap: 20px;
-    min-height: 100vh; /* Ensure full viewport height */
-}
-
-/* Curved Container Styling */
-.curved-container {
-    width: 300px;
-    background-color: #00408f; /* Footer background color for curved container */
-    border-radius: 20px;
+/* Blue Container (Header) Below Toolbar */
+.blue-container {
+    width: 100%;
+    background-color: #00408f; /* Matches footer background */
     padding: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center; /* Center content horizontally */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
 }
@@ -33,13 +24,24 @@ html, body {
 .favicon-logo {
     width: 80px;
     height: auto;
-    margin-bottom: 15px;
+    margin-right: 15px;
 }
 
-.titles h1, .titles h2 {
-    margin: 0;
+.titles {
     text-align: center;
+}
+
+.college-name, .site-title {
+    margin: 0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Invisible Container */
+.invisible-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: calc(100vh - 80px); /* Adjust height for header and footer */
 }
 
 /* Content Styling */
@@ -48,7 +50,6 @@ html, body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    flex-grow: 1; /* Allow content to stretch */
 }
 
 /* Labels Styling */
@@ -56,14 +57,14 @@ html, body {
     font-size: 16px;
     font-weight: bold;
     margin-right: 15px;
-    width: 150px; /* Adjust label width */
+    width: 150px;
     text-align: left;
 }
 
 /* Buttons Row Styling */
 .button-row {
     display: flex;
-    gap: 10px;
+    gap: 10px; /* Space between buttons */
     align-items: center;
 }
 
@@ -73,7 +74,7 @@ button {
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
-    font-size: 14px; /* Reduced button size */
+    font-size: 14px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -87,7 +88,7 @@ button:active {
 
 /* Footer Styling */
 footer {
-    width: 100%; /* Full width footer */
+    width: 100%; /* Full-width footer */
     background-color: #00408f; /* Footer background color */
     color: white;
     text-align: center;
