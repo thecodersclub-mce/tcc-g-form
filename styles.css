@@ -83,7 +83,7 @@ footer {
     background-color: #00408f; 
     color: white;
     text-align: center;
-    padding: 15px; 
+    padding: 8px; /* Reduced padding */
     position: fixed; 
     bottom: 0; 
     left: 0; 
