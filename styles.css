@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
-    overflow: auto; /* Allow scrolling */
+    overflow: auto; /* Enable scrolling */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     color: #333;
     box-sizing: border-box;
@@ -58,14 +58,22 @@ html, body {
 section {
     width: 100%; 
     padding: 15px; 
-    text-align: center; 
+    text-align: center; /* Center all content */
+}
+
+/* H3 headings alignment */
+section h3 {
+    text-align: center; /* Center align headings */
+    margin-bottom: 10px; /* Add spacing between heading and buttons */
 }
 
 /* Button row layout */
 .button-row {
     display: flex;
-    justify-content: center; 
-    gap: 10px; 
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Align the buttons vertically */
+    gap: 10px;
+    flex-wrap: wrap; /* Adjust layout for smaller screens */
 }
 
 /* Button styling */
@@ -111,6 +119,13 @@ footer {
     .site-title {
         font-size: 12px;
     }
+    section h3 {
+        font-size: 14px; /* Adjust heading size for readability */
+    }
+    button {
+        font-size: 10px; /* Adjust button text size */
+        padding: 6px 10px; /* Smaller button size */
+    }
 }
 
 /* Further responsive adjustments for very small screens */
@@ -124,11 +139,11 @@ footer {
     .site-title {
         font-size: 10px; /* Smaller but readable */
     }
-    section {
-        padding: 10px; /* Adjust section spacing */
+    section h3 {
+        font-size: 12px; /* Smaller heading size */
     }
     button {
-        padding: 6px 10px; /* Adjust button size */
-        font-size: 10px; /* Adjust button text size */
+        font-size: 9px; /* Smaller button text size */
+        padding: 5px 8px; /* Adjust button padding */
     }
 }
