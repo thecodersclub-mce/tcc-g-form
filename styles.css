@@ -1,16 +1,16 @@
-/* General styles for the entire page */
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     background-color: #f8f8f8;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: auto; /* Allow vertical scrolling */
+    overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #f4f4f4; 
     color: #333;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
-
-/* Blue header container */
 .blue-container {
     width: 100%;
     background-color: #00408f; 
@@ -20,75 +20,48 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
 }
-
-/* Layout for logo and text in header */
 .left-aligned {
     display: flex;
     align-items: center;
     gap: 10px; 
     padding: 10px;
 }
-
-/* Logo styling */
 .favicon-logo {
-    width: 50px; /* Default size for larger screens */
+    width: 50px; 
     height: auto;
 }
-
-/* Layout for titles in header */
 .titles {
     display: flex;
     flex-direction: column;
 }
 
-/* College name styling */
 .college-name {
     font-size: 16px; 
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
-
-/* Club name styling */
 .site-title {
     font-size: 14px; 
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-
-/* Styling for the label-button container */
-.label-button-container {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center container vertically */
-    align-items: center; /* Center container horizontally */
-    text-align: center; /* Align text inside the container */
-    gap: 10px; /* Add space between h3 and buttons */
-    margin: 0 auto; /* Center the container horizontally */
+.label {
+    font-size: 14px; 
+    font-weight: bold;
+    margin-right: 15px;
+    width: 150px; 
+    text-align: left;
 }
-
-/* Styling for headings inside the container */
-.label-button-container h3 {
-    margin: 0; /* Remove extra margin from heading */
-    font-size: 16px; /* Adjust font size for readability */
-}
-
-/* Section styling */
 section {
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center the section horizontally */
-    align-items: center; /* Center the section vertically */
-    text-align: center;
-    padding: 15px; /* Add padding for spacing */
+    width: 100%; 
+    padding: 15px; 
+    text-align: center; 
 }
-
-/* Button row layout */
 .button-row {
     display: flex;
-    justify-content: center; /* Center buttons horizontally */
-    gap: 10px;               /* Add space between buttons */
+    justify-content: center; 
+    gap: 10px; 
 }
-
-/* Button styling */
 button {
     background-color: #2196F3; 
     color: white; 
@@ -99,137 +72,70 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     cursor: pointer;
 }
-
 button:hover {
     background-color: #1E88E5; 
 }
-
 button:active {
     transform: scale(0.98); 
 }
-
-/* Footer styling */
 footer {
     width: 100%; 
     background-color: #00408f; 
     color: white;
     text-align: center;
-    padding: 4px; /* Reduced footer height */
+    padding: 4px;
     position: fixed; 
     bottom: 0; 
     left: 0; 
 }
-/* Responsive styles for extra large screens (Desktops) */
-@media only screen and (min-width: 1200px) {
+/* Responsive styles for medium screens (Samsung phones, tablets) */
+@media only screen and (max-width: 768px) {
     body {
-        font-size: 18px; /* Slightly larger font for desktops */
+        font-size: 14px; /* Slightly larger base font size */
     }
     .favicon-logo {
-        width: 60px; /* Increase logo size */
+        width: 40px; /* Adjust logo size for better visibility */
     }
     .college-name {
-        font-size: 20px; /* Larger college name */
+        font-size: 16px; /* Maintain readability for college name */
     }
     .site-title {
-        font-size: 18px; /* Larger club name */
+        font-size: 14px; /* Adjust club name for readability */
     }
     .label-button-container h3 {
-        font-size: 20px; /* Larger heading size */
+        font-size: 16px; /* Increase heading size for readability */
     }
     button {
-        font-size: 14px;
-        padding: 12px 18px;
+        font-size: 12px; /* Larger button text size */
+        padding: 10px 15px; /* Increase button size */
+    }
+    .button-row {
+        gap: 15px; /* Add spacing between buttons */
     }
 }
 
-/* Responsive styles for large screens (Laptops) */
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
-    body {
-        font-size: 16px; /* Maintain readability */
-    }
-    .favicon-logo {
-        width: 50px; /* Logo size for laptops */
-    }
-    .college-name {
-        font-size: 18px;
-    }
-    .site-title {
-        font-size: 16px;
-    }
-    .label-button-container h3 {
-        font-size: 18px;
-    }
-    button {
-        font-size: 12px;
-        padding: 10px 15px;
-    }
-}
-
-/* Responsive styles for medium screens (Tablets, Android tablets) */
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-    body {
-        font-size: 15px; /* Slightly larger base font size */
-    }
-    .favicon-logo {
-        width: 40px;
-    }
-    .college-name {
-        font-size: 16px;
-    }
-    .site-title {
-        font-size: 14px;
-    }
-    .label-button-container h3 {
-        font-size: 16px;
-    }
-    button {
-        font-size: 12px;
-        padding: 8px 12px;
-    }
-}
-
-/* Responsive styles for small screens (Mobile devices, Android phones) */
-@media only screen and (max-width: 767px) {
-    body {
-        font-size: 14px; /* Maintain readability on mobile */
-    }
-    .favicon-logo {
-        width: 35px;
-    }
-    .college-name {
-        font-size: 16px;
-    }
-    .site-title {
-        font-size: 14px;
-    }
-    .label-button-container h3 {
-        font-size: 16px;
-    }
-    button {
-        font-size: 12px;
-        padding: 10px 15px;
-    }
-}
-
-/* Responsive styles for extra small screens (Smaller Android phones, older phones) */
+/* Responsive styles for smaller screens (Samsung phones) */
 @media only screen and (max-width: 480px) {
     body {
-        font-size: 16px; /* Larger font size for readability */
+        font-size: 16px; /* Further increase font size for smaller screens */
     }
     .favicon-logo {
-        width: 30px;
+        width: 35px; /* Reduce logo size slightly */
     }
     .college-name {
-        font-size: 18px;
+        font-size: 18px; /* Make college name larger */
     }
     .site-title {
-        font-size: 16px;
+        font-size: 16px; /* Adjust club name size */
     }
     .label-button-container h3 {
-        font-size: 18px;
+        font-size: 18px; /* Make headings larger */
     }
     button {
-        font-size: 14px;
-        padding: 12px 18px;
+        font-size: 14px; /* Larger button text size */
+        padding: 12px 18px; /* Increase button size */
+    }
+    .button-row {
+        gap: 20px; /* Add more spacing between buttons */
     }
 }
