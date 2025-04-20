@@ -133,25 +133,27 @@ ve styles for medium screens (Samsung phones, tablets) */
 /* Responsive styles for smaller screens (Samsung phones) */
 @media only screen and (max-width: 480px) {
     body {
-        font-size: 16px; /* Further increase font size for smaller screens */
+        font-size: 14px; /* Slightly reduce font size for compact readability */
     }
     .favicon-logo {
-        width: 35px; /* Reduce logo size slightly */
+        width: 30px; /* Further reduce logo size */
     }
     .college-name {
-        font-size: 18px; /* Make college name larger */
+        font-size: 16px; /* Slightly smaller college name */
     }
     .site-title {
-        font-size: 16px; /* Adjust club name size */
+        font-size: 14px; /* Slightly smaller club name */
     }
     .label-button-container h3 {
-        font-size: 18px; /* Make headings larger */
+        font-size: 14px; /* Reduced heading size */
+        padding: 6px 10px; /* Reduced padding */
     }
     button {
-        font-size: 14px; /* Larger button text size */
-        padding: 12px 18px; /* Increase button size */
+        font-size: 12px; /* Reduced button text size */
+        padding: 8px 12px; /* Adjust button padding */
     }
     .button-row {
-        gap: 20px; /* Add more spacing between buttons */
+        gap: 15px; /* Reduced spacing between buttons */
     }
 }
+
