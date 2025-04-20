@@ -1,16 +1,15 @@
+/* General styles for the entire page */
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
     background-color: #f8f8f8;
-    overflow: auto;
+    overflow: auto; /* Allow scrolling */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #f4f4f4; 
     color: #333;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
 }
+
+/* Blue header container */
 .blue-container {
     width: 100%;
     background-color: #00408f; 
@@ -20,48 +19,56 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
 }
+
+/* Layout for logo and text in header */
 .left-aligned {
     display: flex;
     align-items: center;
     gap: 10px; 
     padding: 10px;
 }
+
+/* Logo styling */
 .favicon-logo {
-    width: 50px; 
+    width: 50px; /* Default size for larger screens */
     height: auto;
 }
+
+/* Layout for titles in header */
 .titles {
     display: flex;
     flex-direction: column;
 }
 
+/* College name styling */
 .college-name {
     font-size: 16px; 
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
+
+/* Club name styling */
 .site-title {
     font-size: 14px; 
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-.label {
-    font-size: 14px; 
-    font-weight: bold;
-    margin-right: 15px;
-    width: 150px; 
-    text-align: left;
-}
+
+/* Section styling */
 section {
     width: 100%; 
     padding: 15px; 
     text-align: center; 
 }
+
+/* Button row layout */
 .button-row {
     display: flex;
     justify-content: center; 
     gap: 10px; 
 }
+
+/* Button styling */
 button {
     background-color: #2196F3; 
     color: white; 
@@ -72,28 +79,56 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     cursor: pointer;
 }
+
 button:hover {
     background-color: #1E88E5; 
 }
+
 button:active {
     transform: scale(0.98); 
 }
+
+/* Footer styling */
 footer {
     width: 100%; 
     background-color: #00408f; 
     color: white;
     text-align: center;
-    padding: 4px;
+    padding: 4px; /* Reduced footer height */
     position: fixed; 
     bottom: 0; 
     left: 0; 
 }
+
+/* Responsive styles for smaller screens */
 @media only screen and (max-width: 768px) {
+    .favicon-logo {
+        width: 40px; /* Adjust logo size for smaller screens */
+    }
+    .college-name {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+    .site-title {
+        font-size: 12px;
+    }
+}
+
+/* Further responsive adjustments for very small screens */
+@media only screen and (max-width: 480px) {
+    .favicon-logo {
+        width: 30px; /* Further reduce logo size */
+    }
+    .college-name {
+        font-size: 12px; /* Maintain readability */
+    }
+    .site-title {
+        font-size: 10px; /* Smaller but readable */
+    }
     section {
-        padding: 8px; /* Adjust for smaller screens */
+        padding: 10px; /* Adjust section spacing */
     }
     button {
-        padding: 6px 10px; /* Smaller button size */
-        font-size: 10px; /* Adjust font size */
+        padding: 6px 10px; /* Adjust button size */
+        font-size: 10px; /* Adjust button text size */
     }
 }
