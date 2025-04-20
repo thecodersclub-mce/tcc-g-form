@@ -119,41 +119,53 @@ footer {
     bottom: 0; 
     left: 0; 
 }
-
-/* Responsive styles for smaller screens */
 @media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Slightly larger base font size */
+    }
     .favicon-logo {
-        width: 40px; /* Adjust logo size for smaller screens */
+        width: 40px; /* Adjust logo size for better visibility */
     }
     .college-name {
-        font-size: 14px; /* Adjust font size for readability */
+        font-size: 16px; /* Maintain readability for college name */
     }
     .site-title {
-        font-size: 12px;
+        font-size: 14px; /* Adjust club name for readability */
     }
-    section h3 {
-        font-size: 14px; /* Adjust heading size for readability */
+    .label-button-container h3 {
+        font-size: 16px; /* Increase heading size for readability */
     }
     button {
-        font-size: 10px; /* Adjust button text size */
-        padding: 6px 10px; /* Smaller button size */
+        font-size: 12px; /* Larger button text size */
+        padding: 10px 15px; /* Increase button size */
+    }
+    .button-row {
+        gap: 15px; /* Add spacing between buttons */
     }
 }
+
+/* Responsive styles for smaller screens (Samsung phones) */
 @media only screen and (max-width: 480px) {
+    body {
+        font-size: 16px; /* Further increase font size for smaller screens */
+    }
     .favicon-logo {
-        width: 30px; /* Further reduce logo size */
+        width: 35px; /* Reduce logo size slightly */
     }
     .college-name {
-        font-size: 12px; /* Maintain readability */
+        font-size: 18px; /* Make college name larger */
     }
     .site-title {
-        font-size: 10px; /* Smaller but readable */
+        font-size: 16px; /* Adjust club name size */
     }
-    section h3 {
-        font-size: 12px; /* Smaller heading size */
+    .label-button-container h3 {
+        font-size: 18px; /* Make headings larger */
     }
     button {
-        font-size: 9px; /* Smaller button text size */
-        padding: 5px 8px; /* Adjust button padding */
+        font-size: 14px; /* Larger button text size */
+        padding: 12px 18px; /* Increase button size */
+    }
+    .button-row {
+        gap: 20px; /* Add more spacing between buttons */
     }
 }
