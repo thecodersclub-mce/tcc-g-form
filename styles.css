@@ -55,26 +55,30 @@ html, body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Section styling */
-section {
-    width: 100%; 
-    padding: 15px; 
-    text-align: center; /* Center all content */
-}
-
-/* Container for headings and buttons */
+/* Styling for the label-button container */
 .label-button-container {
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: center;    /* Center items horizontally */
-    gap: 10px;              /* Add space between h3 and buttons */
-    text-align: center;     /* Align text in the center */
+    justify-content: center; /* Center container vertically */
+    align-items: center; /* Center container horizontally */
+    text-align: center; /* Align text inside the container */
+    gap: 10px; /* Add space between h3 and buttons */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
 /* Styling for headings inside the container */
 .label-button-container h3 {
-    margin: 0;              /* Remove extra margin from heading */
-    font-size: 16px;        /* Adjust font size for readability */
+    margin: 0; /* Remove extra margin from heading */
+    font-size: 16px; /* Adjust font size for readability */
+}
+
+/* Section styling */
+section {
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center the section horizontally */
+    align-items: center; /* Center the section vertically */
+    text-align: center;
+    padding: 15px; /* Add padding for spacing */
 }
 
 /* Button row layout */
