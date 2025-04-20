@@ -88,3 +88,12 @@ footer {
     bottom: 0; 
     left: 0; 
 }
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 8px; /* Adjust for smaller screens */
+    }
+    button {
+        padding: 6px 10px; /* Smaller button size */
+        font-size: 10px; /* Adjust font size */
+    }
+}
