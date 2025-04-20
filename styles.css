@@ -1,13 +1,16 @@
+/* General styles for the entire page */
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: auto; /* Ensure vertical scrolling is still allowed */
+    overflow-y: auto; /* Allow vertical scrolling */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #f8f8f8; 
     color: #333;
     box-sizing: border-box;
 }
+
+/* Blue header container */
 .blue-container {
     width: 100%;
     background-color: #00408f; 
@@ -59,19 +62,26 @@ section {
     text-align: center; /* Center all content */
 }
 
-/* H3 headings alignment */
-section h3 {
-    text-align: center; /* Center align headings */
-    margin-bottom: 10px; /* Add spacing between heading and buttons */
+/* Container for headings and buttons */
+.label-button-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items horizontally */
+    gap: 10px;              /* Add space between h3 and buttons */
+    text-align: center;     /* Align text in the center */
+}
+
+/* Styling for headings inside the container */
+.label-button-container h3 {
+    margin: 0;              /* Remove extra margin from heading */
+    font-size: 16px;        /* Adjust font size for readability */
 }
 
 /* Button row layout */
 .button-row {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    align-items: center; /* Align the buttons vertically */
-    gap: 10px;
-    flex-wrap: wrap; /* Adjust layout for smaller screens */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px;               /* Add space between buttons */
 }
 
 /* Button styling */
@@ -125,8 +135,6 @@ footer {
         padding: 6px 10px; /* Smaller button size */
     }
 }
-
-/* Further responsive adjustments for very small screens */
 @media only screen and (max-width: 480px) {
     .favicon-logo {
         width: 30px; /* Further reduce logo size */
