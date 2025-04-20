@@ -99,7 +99,8 @@ footer {
     background-color: #00408f;
     color: white;
     text-align: center;
-    padding: 4px;
+    padding: 2px; /* Reduced padding */
+    font-size: 10px; /* Smaller font size for compactness */
     position: fixed;
     bottom: 0;
     left: 0;
